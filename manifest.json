@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "DoubaoRaw",
+  "version": "0.1.0",
+  "description": "Detect and download watermark-free original images from Doubao AI.",
+  "permissions": ["webRequest", "downloads", "storage"],
+  "host_permissions": [
+    "*://*.doubao.com/*",
+    "*://*.byteimg.com/*",
+    "*://*.bytedance.com/*",
+    "*://*.bytetcc.com/*",
+    "*://*.bytecdn.cn/*",
+    "*://*.volccdn.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.doubao.com/*"],
+      "js": ["page-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["*://*.doubao.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "DoubaoRaw"
+  }
+}
