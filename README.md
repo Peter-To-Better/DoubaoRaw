@@ -13,7 +13,7 @@ Download watermark-free original images from Doubao AI in one click
 
 **[繁體中文](#繁體中文) · [English](#english)**
 
-[▶ 觀看 Demo / Watch Demo](demo-video.mp4)
+[![Demo Video](https://img.youtube.com/vi/9XtyPzI1fLI/maxresdefault.jpg)](https://youtu.be/9XtyPzI1fLI)
 
 </div>
 
