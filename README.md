@@ -4,6 +4,10 @@
 
 ---
 
+<video src="demo-video.mp4" controls width="100%"></video>
+
+---
+
 ## 繁體中文
 
 一款 Chrome 擴充功能，能自動偵測豆包（doubao.com）AI 生成圖片的無浮水印原始 URL，並提供一鍵下載功能。
